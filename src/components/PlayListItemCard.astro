@@ -13,9 +13,9 @@ const artistsString = artists.join(",");
   class="group relative hover:bg-zinc-800 shadow-lg hover:shadow-xl bg-zinc-500/30 rounded-md transition-all duration-300"
 >
   <div
-    class="absolute right-4 bottom-10 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10"
+    class="absolute right-4 bottom-20 translate-y-4 transition-all duration-500 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 z-10"
   >
-    <CardPlayButton id={id} client:load />
+    <CardPlayButton id={id} client:visible />
   </div>
 
   <a
@@ -32,7 +32,7 @@ const artistsString = artists.join(",");
       />
     </picture>
 
-    <div class="flex flex-auto flex-col px-2">
+    <div class="flex flex-auto flex-col w-full">
       <h4 class="text-white text-sm" transition:name=`playlist ${id} title`>
         {title}
       </h4>
